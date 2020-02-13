@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="leaflet/leaflet.css">
+
+    </head>
+    <body>
+		<!--the sequence of elements called matters!-->
+		<!-- title of your map-->
+		<h1>Movements based on MPD </h1>
+		
+		<!-- division div for the map -->
+		<div id="map"></div>
+		
+		<!-- link to leaflet javascript library-->
+        <script src="leaflet/leaflet-src.js"></script>
+        
+        <!-- load animation tweening lib requirement for CanvasFlowMapLayer -->
+        <script src="https://unpkg.com/@tweenjs/tween.js@18.5/dist/tween.umd.js"></script>
+
+        <!-- then load CanvasFlowMapLayer -->
+        <script src="js/CanvasFlowmapLayer.js"></script>
+        
+        <!-- variable for flowmap input-->
+        <script src="data/population_estonia.js"></script>
+		
+		<!-- link to main javascript file -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
