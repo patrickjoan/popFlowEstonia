@@ -91,14 +91,14 @@ var oneToManyFlowmapLayer = L.canvasFlowmapLayer(geoJsonFeatureCollection, {
     pathDisplayMode: 'selection',
     animationStarted: true
 }).addTo(map);
-  // Selection for dispaly
-  oneToManyFlowmapLayer.on('click', function(e) {
-    if (e.sharedOriginFeatures.length) {
-      oneToManyFlowmapLayer.selectFeaturesForPathDisplay(e.sharedOriginFeatures, 'SELECTION_NEW');
-    }
-    if (e.sharedDestinationFeatures.length) {
-      oneToManyFlowmapLayer.selectFeaturesForPathDisplay(e.sharedDestinationFeatures, 'SELECTION_NEW');
-    }
-  });
+// Selection for dispaly
+oneToManyFlowmapLayer.on('click', function(e) {
+  if (e.sharedOriginFeatures.length) {
+    oneToManyFlowmapLayer.selectFeaturesForPathDisplay(e.sharedOriginFeatures, 'SELECTION_NEW');
+  }
+  if (e.sharedDestinationFeatures.length) {
+    oneToManyFlowmapLayer.selectFeaturesForPathDisplay(e.sharedDestinationFeatures, 'SELECTION_NEW');
+  }
+});
 
-  oneToManyFlowmapLayer.selectFeaturesForPathDisplayById('start_kant_id', 673, true, 'SELECTION_NEW');
+oneToManyFlowmapLayer.selectFeaturesForPathDisplayById('start_kant_id', 673, true, 'SELECTION_NEW');
